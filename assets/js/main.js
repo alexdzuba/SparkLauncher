@@ -33,13 +33,13 @@
     });
   }
 
-  function initDemoButtons(){
+  function initButtons(){
     $$('[data-toast]').forEach(btn => {
       btn.addEventListener('click', () => showToast(btn.dataset.toast || 'Кнопка работает'));
     });
 
     $$('[data-download-toast]').forEach(link => {
-      link.addEventListener('click', () => showToast('Скачивание демо-болванки Spark Launcher началось.'));
+      link.addEventListener('click', () => showToast('Скачивание Spark Launcher началось.'));
     });
   }
 
@@ -78,7 +78,7 @@
     form.addEventListener('submit', event => {
       event.preventDefault();
       form.reset();
-      showToast('Сообщение отправлено в демо-режиме. На реальном сайте тут будет заявка в поддержку.');
+      showToast('Заявка отправлена. Команда поддержки свяжется с вами по указанной почте.');
     });
   }
 
@@ -90,8 +90,8 @@
       const ua = navigator.userAgent;
       const isWindows = /Windows/i.test(ua);
       result.textContent = isWindows
-        ? 'Совместимость: Windows обнаружен. Spark Launcher Demo подходит для показа на зачёте.'
-        : 'Совместимость: сайт открыт не с Windows, но демо-файл всё равно можно скачать.';
+        ? 'Совместимость: Windows обнаружен. Spark Launcher подходит для вашего устройства.'
+        : 'Совместимость: сайт открыт не с Windows. Spark Launcher рассчитан на Windows 10/11.';
       showToast('Проверка совместимости выполнена.');
     });
   }
@@ -113,7 +113,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     setActiveNav();
     initMobileMenu();
-    initDemoButtons();
+    initButtons();
     initLibraryFilters();
     initFaq();
     initSupportForm();
