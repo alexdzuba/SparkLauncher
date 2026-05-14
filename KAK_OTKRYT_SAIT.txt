@@ -1,1 +1,6 @@
-Открой файл index.html двойным кликом. Все страницы и кнопки сделаны рабочими. Кнопка скачивания скачивает downloads/SparkLauncher_Setup_Demo.zip.
+Как открыть сайт
+
+1. Открой файл index.html двойным кликом.
+2. Для публикации на GitHub Pages загрузи все файлы из этой папки в репозиторий sparklauncher.github.io.
+3. Главная страница: index.html.
+4. Кнопка скачивания ведёт на downloads/SparkLauncher_Setup.zip.
