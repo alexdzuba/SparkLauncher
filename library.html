@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Библиотека | Spark Launcher</title>
+  <meta name="description" content="Демо-библиотека Spark Launcher с фильтрами Steam, Epic Games и Xbox.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html" aria-label="Spark Launcher главная">
+        <span class="logo-mark">S</span><span>SPARK<span class="logo-dot">.</span></span>
+      </a>
+      <div class="nav-links" data-menu>
+        <a href="index.html">Главная</a>
+        <a href="features.html">Преимущества</a>
+        <a href="library.html">Библиотека</a>
+        <a href="support.html">Поддержка</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-ghost btn-small mobile-toggle" data-menu-toggle type="button">Меню</button>
+        <a class="btn btn-ghost btn-small desktop-only" href="https://t.me/SparkLauncher" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn-primary btn-small" href="download.html">Скачать</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="kicker">Game Library</div>
+        <h1>Единая<br><span class="gradient-text">библиотека игр</span></h1>
+        <p class="lead">Фильтры и кнопки на этой странице работают. Для зачёта можно показать, как пользователь выбирает платформу и запускает игру.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="filters">
+          <button class="btn btn-ghost btn-small filter-btn active" type="button" data-filter="all">Все</button>
+          <button class="btn btn-ghost btn-small filter-btn" type="button" data-filter="steam">Steam</button>
+          <button class="btn btn-ghost btn-small filter-btn" type="button" data-filter="epic">Epic Games</button>
+          <button class="btn btn-ghost btn-small filter-btn" type="button" data-filter="xbox">Xbox</button>
+          <button class="btn btn-line btn-small" type="button" data-toast="Демо: синхронизация библиотек выполнена.">Синхронизировать</button>
+        </div>
+        <div class="library-grid"><article class="library-game" data-platform="steam">
+      <div><div class="cover"></div><span class="tag">Steam</span><h3>Cyber Arena</h3><p style="color:var(--muted);line-height:1.55">2 друга онлайн. Карточка показывает, как может выглядеть библиотека Spark Launcher.</p></div>
+      <div class="game-actions"><button class="btn btn-primary btn-small" type="button" data-toast="Демо: Cyber Arena запускается через Spark Launcher.">Запустить</button><button class="btn btn-ghost btn-small" type="button" data-toast="Демо: открыта карточка игры Cyber Arena.">Подробнее</button></div>
+    </article><article class="library-game" data-platform="epic">
+      <div><div class="cover"></div><span class="tag">Epic</span><h3>Neon Drift</h3><p style="color:var(--muted);line-height:1.55">Обновлено сегодня. Карточка показывает, как может выглядеть библиотека Spark Launcher.</p></div>
+      <div class="game-actions"><button class="btn btn-primary btn-small" type="button" data-toast="Демо: Neon Drift запускается через Spark Launcher.">Запустить</button><button class="btn btn-ghost btn-small" type="button" data-toast="Демо: открыта карточка игры Neon Drift.">Подробнее</button></div>
+    </article><article class="library-game" data-platform="xbox">
+      <div><div class="cover"></div><span class="tag">Xbox</span><h3>Space Co-op</h3><p style="color:var(--muted);line-height:1.55">Кооператив. Карточка показывает, как может выглядеть библиотека Spark Launcher.</p></div>
+      <div class="game-actions"><button class="btn btn-primary btn-small" type="button" data-toast="Демо: Space Co-op запускается через Spark Launcher.">Запустить</button><button class="btn btn-ghost btn-small" type="button" data-toast="Демо: открыта карточка игры Space Co-op.">Подробнее</button></div>
+    </article><article class="library-game" data-platform="steam">
+      <div><div class="cover"></div><span class="tag">Steam</span><h3>Night Raid</h3><p style="color:var(--muted);line-height:1.55">Готово. Карточка показывает, как может выглядеть библиотека Spark Launcher.</p></div>
+      <div class="game-actions"><button class="btn btn-primary btn-small" type="button" data-toast="Демо: Night Raid запускается через Spark Launcher.">Запустить</button><button class="btn btn-ghost btn-small" type="button" data-toast="Демо: открыта карточка игры Night Raid.">Подробнее</button></div>
+    </article><article class="library-game" data-platform="epic">
+      <div><div class="cover"></div><span class="tag">Epic</span><h3>Pixel War</h3><p style="color:var(--muted);line-height:1.55">Новая версия. Карточка показывает, как может выглядеть библиотека Spark Launcher.</p></div>
+      <div class="game-actions"><button class="btn btn-primary btn-small" type="button" data-toast="Демо: Pixel War запускается через Spark Launcher.">Запустить</button><button class="btn btn-ghost btn-small" type="button" data-toast="Демо: открыта карточка игры Pixel War.">Подробнее</button></div>
+    </article><article class="library-game" data-platform="xbox">
+      <div><div class="cover"></div><span class="tag">Xbox</span><h3>Future Strike</h3><p style="color:var(--muted);line-height:1.55">Пати доступно. Карточка показывает, как может выглядеть библиотека Spark Launcher.</p></div>
+      <div class="game-actions"><button class="btn btn-primary btn-small" type="button" data-toast="Демо: Future Strike запускается через Spark Launcher.">Запустить</button><button class="btn btn-ghost btn-small" type="button" data-toast="Демо: открыта карточка игры Future Strike.">Подробнее</button></div>
+    </article></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div><b>SPARK LAUNCHER</b><br><span>Меньше кликов — больше игр.</span></div>
+      <div>Telegram: <a href="https://t.me/SparkLauncher" target="_blank" rel="noopener">@SparkLauncher</a></div>
+      <a href="download.html" class="btn btn-line btn-small">Скачать демо</a>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

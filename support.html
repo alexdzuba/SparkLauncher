@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поддержка | Spark Launcher</title>
+  <meta name="description" content="Страница поддержки Spark Launcher с FAQ, Telegram и демо-формой.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html" aria-label="Spark Launcher главная">
+        <span class="logo-mark">S</span><span>SPARK<span class="logo-dot">.</span></span>
+      </a>
+      <div class="nav-links" data-menu>
+        <a href="index.html">Главная</a>
+        <a href="features.html">Преимущества</a>
+        <a href="library.html">Библиотека</a>
+        <a href="support.html">Поддержка</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-ghost btn-small mobile-toggle" data-menu-toggle type="button">Меню</button>
+        <a class="btn btn-ghost btn-small desktop-only" href="https://t.me/SparkLauncher" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn-primary btn-small" href="download.html">Скачать</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="kicker">Support Center</div>
+        <h1>Поддержка<br><span class="gradient-text">Spark Launcher</span></h1>
+        <p class="lead">Здесь есть FAQ, кнопка Telegram, копирование почты и форма заявки. Всё кликается и выглядит в одном стиле.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap cards" style="align-items:start">
+        <div class="card">
+          <div class="icon">💬</div>
+          <h3>Telegram</h3>
+          <p>Новости проекта и связь с аудиторией находятся в Telegram-канале Spark Launcher.</p>
+          <a class="btn btn-primary btn-small" href="https://t.me/SparkLauncher" target="_blank" rel="noopener">Открыть канал</a>
+        </div>
+        <div class="card">
+          <div class="icon">✉️</div>
+          <h3>Почта</h3>
+          <p>Демо-контакт для страницы поддержки. Кнопка копирования работает через браузер.</p>
+          <button class="btn btn-line btn-small" type="button" data-copy="support@spark-launcher.demo">Скопировать почту</button>
+        </div>
+        <div class="card">
+          <div class="icon">🧩</div>
+          <h3>Демо-заявка</h3>
+          <form class="form" data-support-form>
+            <input class="input" required placeholder="Ваше имя">
+            <input class="input" required type="email" placeholder="Email">
+            <textarea class="textarea" required placeholder="Что случилось?"></textarea>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:20px">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">FAQ</div><h2>Частые вопросы</h2></div>
+        </div>
+        <div class="faq">
+          <div class="faq-item open"><button class="faq-q" type="button">Сколько стоит Spark Launcher? <span>+</span></button><div class="faq-a">В рамках проекта цена указана как 100 ₽.</div></div>
+          <div class="faq-item"><button class="faq-q" type="button">Что скачивается с сайта? <span>+</span></button><div class="faq-a">Скачивается безопасная демо-болванка ZIP с README-файлом. Это нужно для демонстрации работающей кнопки.</div></div>
+          <div class="faq-item"><button class="faq-q" type="button">Какие страницы есть на сайте? <span>+</span></button><div class="faq-a">Главная, преимущества, библиотека, поддержка и страница скачивания.</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div><b>SPARK LAUNCHER</b><br><span>Меньше кликов — больше игр.</span></div>
+      <div>Telegram: <a href="https://t.me/SparkLauncher" target="_blank" rel="noopener">@SparkLauncher</a></div>
+      <a href="download.html" class="btn btn-line btn-small">Скачать демо</a>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
